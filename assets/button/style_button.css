@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100px;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #eb3f5c;
+  position: relative;
+}
+
+.nav a::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to left, transparent, #eb3f5c);
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  transition: all .5s ease-in;
+}
+
+.nav a:hover::before {
+  width: 100%;
+}
+
+.container_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #443d3d;
+  height: 500px;
+}
+
+.container_btn a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  color: #c2bebe;
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+.container_btn a:hover {
+  background-color: #eb3f5c;
+  box-shadow: 0 0 20px #eb3f5c, 0 0 50px #eb3f5c, 0 0 80px #eb3f5c;
+  transition: all 1s ease;
+  transition-delay: 1s;
+  color: black;
+}
+
+.container_btn a span {
+  position: absolute;
+  display: block;
+}
+
+.container_btn a .item1 {
+  background: linear-gradient(to right, transparent, #eb3f5c);
+  left: -100%;
+  top: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.container_btn a:hover .item1 {
+  transition: 1s;
+  left: 100%;
+}
+
+.container_btn a .item2 {
+  background: linear-gradient(transparent, #eb3f5c);
+  top: -100%;
+  width: 2px;
+  right: 0;
+  height: 100%;
+}
+
+.container_btn a:hover .item2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.container_btn a .item3 {
+  background: linear-gradient(to left, transparent, #eb3f5c);
+  right: -100%;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+
+.container_btn a:hover .item3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+.container_btn a .item4 {
+  background: linear-gradient(to top, transparent, #eb3f5c);
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+}
+
+.container_btn a:hover .item4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .75s;
+}
+/*# sourceMappingURL=style_button.css.map */

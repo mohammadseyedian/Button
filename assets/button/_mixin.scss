@@ -1,0 +1,14 @@
+@mixin style_body{
+    margin:0;
+    padding:0;
+}
+
+@mixin style_hover{
+    &:hover{
+        background-color: $three;
+        box-shadow: 0 0 20px $three , 0 0 50px $three ,0 0 80px $three;
+        transition: all 1s ease;
+        transition-delay: 1s;
+        color: black;
+    }
+}
